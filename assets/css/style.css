@@ -36,6 +36,11 @@
 }
 
 @media screen and (max-width:767px){
+  .all-content{
+    background-image: url(../images/Wallpaper\ Mobile.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+  }
 
   /* Header */
   .header{
@@ -49,6 +54,7 @@
   
   /* Home */
   .home{
+    background-color: transparent;
     width: 100%;
     height: calc(100vh - 65px);
     display: flex;
@@ -74,6 +80,7 @@
 
   /* About */
   #about{
+    background-color: white;
     height: 100vh;
     width: 100%;
   }
@@ -109,6 +116,7 @@
   
   /* Work */
   #work{
+    background-color: white;
     height: 100vh;
     width: 100%;
     padding: 20px;
@@ -150,22 +158,78 @@
   }
   
   /* Menu */
-  .menu{
-    height: 50px;
-    width: 50px;
+.menu{
     position: fixed;
     bottom: 30px;
     right: 30px;
-  }
+    width: 45px;
+    border-radius: 30px;
+    transition: 0.3s height ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+
+.menu--closed{
+    height: 45px;
+}
+
+.menu--closed a{
+  visibility: hidden;
+}
+
+.menu--open{
+    height: 300px;
+}
+
+.menu--open a{
+  visibility: initial;
+  padding: 10px;
+  margin-bottom: 10px;
+  height: 45px;
+  width: 45px;
+  font-size: 30px;
+  background-color: var(--mainColor);
+  border-radius: 30px;
+  color: var(--2sColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu--open a:hover{
+  transform: scale(1.1);
+}
+
+.button{
+  background-image: url(../images/circle-chevron-up-solid.svg);
+  transition: 0.3s transform ease-in-out;
+  cursor: pointer;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 45px;
+  height: 45px;
+}
+
+.button:hover{
+transform: scale(1.1);
+}
+
+.menu--open .button{
+transform-origin: center;
+transform: rotate(180deg);
+}
 
   /* Footer */
   .footer{
+    background-color: var(--4tColor);
     width: 100%;
     height: min-content;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 5px solid var(--mainColor);
     text-align: center;
   }
 
@@ -177,18 +241,19 @@
   }  
 
   .talk{
-    color: var(--4tColor);
+    color: var(--3tColor);
     padding: 5px;
   }
 
   .talk span{
-    color: var(--mainColor);
-    text-decoration: underline;
+    color: var(--3tColor);
+    text-decoration: underline 1px;
   }
 
   .design{
-    color: var(--4tColor);
+    color: var(--3tColor);
     padding: 5px;
+    font-size: 12px;
   }
 
   .footer a img{
@@ -200,14 +265,14 @@
   }
 
   .icons #linkedin{
-    color: var(--4tColor);
+    color: var(--3tColor);
     font-size: 30px;
     padding: 3px;
 
   }
 
   .icons #github{
-    color: var(--4tColor);
+    color: var(--3tColor);
     font-size: 30px;
     padding: 3px;
   }
