@@ -177,7 +177,7 @@
 }
 
 .menu--open a{
-  visibility: hidden;
+  visibility: initial;
   opacity: 1;
   margin-bottom: 10px;
   height: 45px;
