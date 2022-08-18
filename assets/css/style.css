@@ -33,6 +33,7 @@
   border: none;
   text-decoration: none;
   transition: .2s linear;
+  scroll-behavior: smooth;
 }
 
 @media screen and (max-width:767px){
@@ -81,6 +82,10 @@
     background-color: var(white);
     height: fit-content;
     width: 100%;
+  }
+
+  #about .content .text{
+    max-width: 90%;
   }
 
   #about .content h2{
@@ -320,6 +325,10 @@ transform: rotate(180deg);
   width: 100%;
 }
 
+#about .content .text{
+  max-width: 80%;
+}
+
 #about .content h2{
   color: var(--mainColor);
   font-size: 60px;
@@ -555,6 +564,10 @@ transform: rotate(180deg);
   background-color: var(white);
   height: fit-content;
   width: 100%;
+}
+
+#about .content .text{
+  max-width: 60%;
 }
 
 #about .content h2{
