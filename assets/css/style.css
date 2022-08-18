@@ -49,7 +49,7 @@
   
 /**************** Home ********************/
   .home{
-    background-image: url(../images/Wallpaper\ Mobile.jpg);
+    background-image: url(../images/Wallpaper-Mobile.jpg);
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
@@ -285,7 +285,7 @@ transform: rotate(180deg);
 
 /**************** Home ********************/
 .home{
-  background-image: url(../images/Wallpaper\ Desktop.jpg);
+  background-image: url(../images/Wallpaper-Desktop.jpg);
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
@@ -521,7 +521,7 @@ transform: rotate(180deg);
 
 /**************** Home ********************/
 .home{
-  background-image: url(../images/Wallpaper\ Desktop.jpg);
+  background-image: url(../images/Wallpaper-Desktop.jpg);
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
