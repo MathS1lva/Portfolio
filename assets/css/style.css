@@ -4,7 +4,7 @@
   --mainColor: #00ffc6;
   --2sColor:#000000;
   --3tColor: #ffffff;
-  --4tColor: rgb(161, 161, 161); 
+  --4tColor: rgb(161, 161, 161);
 }
 
 ::-webkit-scrollbar-track{
@@ -40,9 +40,11 @@
     background-image: url(../images/Wallpaper\ Mobile.jpg);
     background-size: cover;
     background-attachment: fixed;
+    left: 0;
+    top: 0;
   }
 
-  /* Header */
+/**************** Header ********************/
   .header{
     width: 100%;
     height: 65px;
@@ -50,9 +52,10 @@
 
   .header a img{
     height: 100%;
+    margin-left: 5px;
   }
   
-  /* Home */
+/**************** Home ********************/
   .home{
     background-color: transparent;
     width: 100%;
@@ -61,24 +64,24 @@
     align-items: center;
   }
   
-  .nome{
+  .home .content{
     width: fit-content;
     margin-left: 20px;
     margin-bottom: 100px;
   }
 
-  .nome h1{
+  .home .content h1{
     font-size: 60px;
     font-weight: 400;
   }
 
-  .nome h3{
+  .home .content h3{
     color: var(--mainColor);
     font-size: 25px;
     font-weight: 400;
   }
 
-  /* About */
+/**************** About ********************/
   #about{
     background-color: white;
     height: 100vh;
@@ -114,7 +117,7 @@
     float: right;
   }
   
-  /* Work */
+/**************** Work ********************/
   #work{
     background-color: white;
     height: 100vh;
@@ -124,15 +127,15 @@
     align-items: center;
   }
 
-  .work-content{
+  #work .content{
     text-align: center;
   }
 
-  .work-content img{
+  #work .content img{
     width: 100%;
   }
 
-  .work-content h2{
+  #work .content h2{
     color: var(--mainColor);
     font-size: 30px;
     font-weight: 400;
@@ -157,7 +160,7 @@
     padding: 10px;
   }
   
-  /* Menu */
+/**************** Menu ********************/
 .menu{
     position: fixed;
     bottom: 30px;
@@ -172,7 +175,7 @@
  }
 
 .menu a{
-  display: none;
+  opacity: 0;
 }
 
 .menu--open{
@@ -180,7 +183,7 @@
 }
 
 .menu--open a{
-  display: initial;
+  opacity: 1;
   margin-bottom: 10px;
   height: 45px;
   width: 45px;
@@ -216,7 +219,7 @@ transform-origin: center;
 transform: rotate(180deg);
 }
 
-  /* Footer */
+/**************** Footer ********************/
   .footer{
     background-color: var(--4tColor);
     width: 100%;
@@ -227,7 +230,7 @@ transform: rotate(180deg);
     text-align: center;
   }
 
-  .footer .content h4{
+  .footer .content h3{
     color: var(--mainColor);
     font-size: 25px;
     font-weight: 400;
