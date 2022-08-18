@@ -1,14 +1,7 @@
-$(document).ready(function() {
+const $menu = document.querySelector('#button');
+const $menuList = document.querySelector('.menu')
 
-
-    var Menu = {
-        body: $('.menu'),
-        button: $('.button'),
-    };
-
-    Menu.button.click(function () {
-        Menu.body.toggleClass('menu--closed');
-        Menu.body.toggleClass('menu--open');
-    });
-
-});
+$menu.addEventListener('click', function(e){ 
+    e.preventDefault();
+    $menuList.classList.toggle('menu--open');
+})

@@ -4,7 +4,7 @@
   --mainColor: #00ffc6;
   --2sColor:#000000;
   --3tColor: #ffffff;
-  --4tColor: rgb(113, 113, 113); 
+  --4tColor: rgb(161, 161, 161); 
 }
 
 ::-webkit-scrollbar-track{
@@ -163,7 +163,7 @@
     bottom: 30px;
     right: 30px;
     width: 45px;
-    border-radius: 30px;
+    height: 45px;
     transition: 0.3s height ease-in-out;
     display: flex;
     flex-direction: column;
@@ -171,12 +171,8 @@
     justify-content: center;
  }
 
-.menu--closed{
-    height: 45px;
-}
-
-.menu--closed a{
-  visibility: hidden;
+.menu a{
+  display: none;
 }
 
 .menu--open{
@@ -184,8 +180,7 @@
 }
 
 .menu--open a{
-  visibility: initial;
-  padding: 10px;
+  display: initial;
   margin-bottom: 10px;
   height: 45px;
   width: 45px;
@@ -202,22 +197,21 @@
   transform: scale(1.1);
 }
 
-.button{
-  background-image: url(../images/circle-chevron-up-solid.svg);
+#button{
+  color: var(--2sColor);
   transition: 0.3s transform ease-in-out;
+  font-size: 45px;
   cursor: pointer;
   position: fixed;
   bottom: 30px;
   right: 30px;
-  width: 45px;
-  height: 45px;
 }
 
-.button:hover{
+#button:hover{
 transform: scale(1.1);
 }
 
-.menu--open .button{
+.menu--open #button{
 transform-origin: center;
 transform: rotate(180deg);
 }
