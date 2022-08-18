@@ -175,7 +175,7 @@
  }
 
 .menu a{
-  opacity: 0;
+  display: none;
 }
 
 .menu--open{
@@ -183,7 +183,7 @@
 }
 
 .menu--open a{
-  opacity: 1;
+  display: initial;
   margin-bottom: 10px;
   height: 45px;
   width: 45px;
