@@ -635,6 +635,10 @@ transform: rotate(180deg);
   padding: 3px;
 }
 
+#work .content a:hover{
+  transform: scale();
+}
+
 #work .text{
   color: var(--2sColor);
   padding: 10px;
