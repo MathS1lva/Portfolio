@@ -145,12 +145,16 @@
     font-size: 20px;
   }
 
-  #work .content a{
+  #work .content .btn{
     color: var(--mainColor);
     font-size: 20px;
     border: 3px solid;
     border-radius: 5px;
     padding: 3px;
+  }
+
+  #work .content .btn:hover{
+    padding: 5px;
   }
 
   #work .text{
@@ -386,12 +390,16 @@ transform: rotate(180deg);
   font-size: 20px;
 }
 
-#work .content a{
+#work .content .btn{
   color: var(--mainColor);
   font-size: 20px;
   border: 3px solid;
   border-radius: 5px;
   padding: 3px;
+}
+
+#work .content .btn:hover{
+  padding: 5px;
 }
 
 #work .text{
@@ -627,7 +635,7 @@ transform: rotate(180deg);
   font-size: 20px;
 }
 
-#work .content a{
+#work .content .btn{
   color: var(--mainColor);
   font-size: 20px;
   border: 3px solid;
@@ -635,8 +643,8 @@ transform: rotate(180deg);
   padding: 3px;
 }
 
-#work .content a:hover{
-  transform: scale();
+#work .content .btn:hover{
+  padding: 5px;
 }
 
 #work .text{
